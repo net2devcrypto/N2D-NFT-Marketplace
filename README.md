@@ -37,4 +37,8 @@ practice some info gathering using the hardhat console:
 
 npx hardhat console
 
+Hardhat Knowledge Base : https://hardhat.org/tutorial
+
+EthersJS Knowledge Base: https://docs.ethers.io/v5/
+
 #######################################################
