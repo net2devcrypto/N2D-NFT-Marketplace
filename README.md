@@ -1,5 +1,21 @@
 # N2D-NFT-Marketplace
 
+🚀👩‍🚀This repo contains all the files to follow along and implement a MultiChain NFT MarketPlace!
+
+** THE FILES ATTACHED TO THIS REPO ARE FOR EDUCATIONAL PURPOSES ONLY **
+
+** NOT FINANCIAL ADVISE **
+
+** USE IT AT YOUR OWN RISK** **I'M NOT RESPONSIBLE FOR ANY USE, ISSUES ETC.. **
+
+Please follow instructions for the video tutorial you are watching.
+
+Video tutorial playlist:
+
+https://www.youtube.com/watch?v=RnPMP813KMc&list=PLLkrq2VBYc1a2taQxryxo_sfHIOe6TeJP
+
+################################################################
+
 Part-1 Hardhat and EthersJS
 
 Steps:
