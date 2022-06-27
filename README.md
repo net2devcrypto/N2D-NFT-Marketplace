@@ -1,6 +1,6 @@
 # N2D-NFT-Marketplace
 
-🚀👩‍🚀This repo contains all the files to follow along and implement a MultiChain NFT MarketPlace!
+🚀👩‍🚀This repo contains all the files to follow along and implement a MultiChain NFT MarketPlace! Be sure to watch my Youtube tutorials so you can learn and follow along!
 
 ** THE FILES ATTACHED TO THIS REPO ARE FOR EDUCATIONAL PURPOSES ONLY **
 
