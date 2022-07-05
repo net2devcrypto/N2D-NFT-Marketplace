@@ -1,4 +1,4 @@
-<a href="http://youtube.a3b.io" target="_blank"><img src="https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/n2DMarket.png" width="300" height="50"></a>
+<a href="http://youtube.a3b.io" target="_blank"><img src="https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/n2DMarket.png" width="270" height="50"></a>
 
 🚀👩‍🚀This repo contains all the files to follow along and implement a MultiChain NFT MarketPlace! Be sure to watch my Youtube tutorials so you can learn and follow along!
 
