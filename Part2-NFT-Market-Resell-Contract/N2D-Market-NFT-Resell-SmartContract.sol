@@ -73,7 +73,6 @@ contract NFTMarketResell is IERC721Receiver, ReentrancyGuard {
       uint256 price = vaultItems[tokenId].price;
       require(msg.value == price, "Transfer Total Amount to complete transaction");
       vaultItems[tokenId].seller.transfer(msg.value);
-      payable(msg.sender).transfer(listingFee);
       nft.transferFrom(address(this), msg.sender, tokenId);
       vaultItems[tokenId].sold = true;
       delete vaultItems[tokenId];
