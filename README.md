@@ -130,7 +130,7 @@ npm i --save-dev react-multi-carousel
 
 3- Proceed to replace the files in your market project folder with each respective
 
-file attached in the Part-4 Folder, Replace "engine" folder with all files as well.
+file attached in the Part-4 Folder, Replace "engine" and "public" folder with all files as well.
 
 4- Obtain your Resell Smart Contract Owner Wallet Private Key. (Wallet used to deploy contract)
 
