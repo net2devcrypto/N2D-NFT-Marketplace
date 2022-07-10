@@ -112,3 +112,48 @@ npm run dev
 Watch part 3 vid for more details.
 
 #######################################################
+
+Part-4 Relist and Buy NFTs!
+
+Steps:
+
+1- New changes have been performed on the Resell SmartContract.
+Redeploy it on your favorite testnet and save the address.
+
+Contract link: 
+
+https://github.com/net2devcrypto/N2D-NFT-Marketplace/tree/main/Part2-NFT-Market-Resell-Contract
+
+2- Install NFT Carousel Dependency:
+
+npm i --save-dev react-multi-carousel
+
+3- Proceed to replace the files in your market project folder with each respective
+
+file attached in the Part-4 Folder, Replace "engine" folder with all files as well.
+
+4- Obtain your Resell Smart Contract Owner Wallet Private Key. (Wallet used to deploy contract)
+
+Go to /engine/configuration and update the values accordingly:
+
+Replace with your Private key in "hhraw":
+
+const hhraw = "0xREPLACEWITHPRIVATEKEY";
+
+Add your smart contract addresses here:
+
+export var hhresell = "YOUR NFT RESELL MARKET SMART CONTRACT";
+
+export var hhnftcol = "YOUR NFT COLLECTION SMART CONTRACT";
+
+var hhrpc = "REPLACE WITH THE TESTNET RPC";
+
+CTRL + S to save configs
+
+Run the web server and validate:
+
+npm run dev
+
+Watch part 4 vid for more details.
+
+#######################################################
