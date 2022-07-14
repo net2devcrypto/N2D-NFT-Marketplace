@@ -17,7 +17,7 @@ https://www.youtube.com/watch?v=RnPMP813KMc&list=PLLkrq2VBYc1a2taQxryxo_sfHIOe6T
 
 ################################################################
 
-<h3>💥Part-1 Hardhat and EthersJS</h3>
+##💥Part-1 Hardhat and EthersJS
 
 Steps:
 
