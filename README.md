@@ -69,9 +69,7 @@ Click for video:
 
 Steps:
 
-1- Navigate to your n2dmarket project folder and install the
-
-remaining dependencies:
+1- Navigate to your n2dmarket project folder and install the remaining dependencies:
 
 ```shell
 npm i --save-dev "@types/react"
