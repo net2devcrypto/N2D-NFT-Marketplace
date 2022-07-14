@@ -187,7 +187,11 @@ Click for video:
 
 1-Deploy the Marketplace Contract to sell created NFTs located in Part5 Folder repo. Copy the contract address.
 
+https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/Part5-Create-and-Sell-NFT-App/N2D-Market-SellCreatedNFT-SmartContract.sol
+
 2-Deploy the NFT Smart Contract to create NFTs located in Part5 Folder, add the NFT Market smart contract to sell created NFTs when deploying and copy the contract address once deployed.
+
+https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/Part5-Create-and-Sell-NFT-App/N2D-Market-CreateNFT-SmartContract.sol
 
 3- Go to /engine/configuration and add the additional contracts accordingly:
 
