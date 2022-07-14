@@ -31,7 +31,7 @@ npx create-next-app n2dmarket
 npm i hardhat
 ```
 
-3- Create a hardhat environment (Follow Video Tutorial)
+3- Create a hardhat environment.
 
 ```shell
 npx hardhat
