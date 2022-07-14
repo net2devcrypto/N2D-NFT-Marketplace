@@ -11,11 +11,9 @@
 
 Please follow instructions for the video tutorial you are watching.
 
-Video tutorial playlist:
-
-https://www.youtube.com/watch?v=RnPMP813KMc&list=PLLkrq2VBYc1a2taQxryxo_sfHIOe6TeJP
-
 ## Part-1 Hardhat and EthersJS
+
+<a href="http://youtube.a3b.io" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo.svg" width="260" height="50"></a>
 
 Steps:
 
