@@ -91,6 +91,7 @@ npm i --save-dev @types/canvas-confetti
 
 file attached in the Part-3 Folder, Add the "engine" folder to the project root folder.
 
+
 3- Deploy your test NFT Collection and NFT Market Resell Smart Contracts (refer to Part2 Vid)
 
 and go to /engine/configuration and update the values accordingly:
@@ -122,9 +123,11 @@ npm run dev
 
 Watch part 3 vid for more details.
 
-#######################################################
+## Part-4 Relist and Buy NFTs!
 
-<h3>💥Part-4 Relist and Buy NFTs!</h3>
+Click for video:
+
+<a href="https://www.youtube.com/watch?v=1QP6UYZc8fU&t=2155s" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="150" height="40"></a> 
 
 Steps:
 
@@ -137,7 +140,9 @@ https://github.com/net2devcrypto/N2D-NFT-Marketplace/tree/main/Part2-NFT-Market-
 
 2- Install NFT Carousel Dependency:
 
+```shell
 npm i --save-dev react-multi-carousel
+```
 
 3- Proceed to replace the files in your market project folder with each respective
 
@@ -149,22 +154,26 @@ Go to /engine/configuration and update the values accordingly:
 
 Replace with your Private key in "hhraw":
 
+```shell
 const hhraw = "0xREPLACEWITHPRIVATEKEY";
+```
 
 Add your smart contract addresses here:
 
+```shell
 export var hhresell = "YOUR NFT RESELL MARKET SMART CONTRACT";
 
 export var hhnftcol = "YOUR NFT COLLECTION SMART CONTRACT";
 
 var hhrpc = "REPLACE WITH THE TESTNET RPC";
+```
 
 CTRL + S to save configs
 
 Run the web server and validate:
 
+```shell
 npm run dev
-
+```
 Watch part 4 vid for more details.
 
-#######################################################
