@@ -13,7 +13,7 @@ Please follow instructions for the video tutorial you are watching.
 
 ## Part-1 Hardhat and EthersJS
 
-<a href="http://youtube.a3b.io" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo.svg" width="260" height="50"></a>
+<a href="http://youtube.a3b.io" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="260" height="50"></a>
 
 Steps:
 
