@@ -205,6 +205,6 @@ export var hhmarket = "YOUR SELL CREATED NFT MARKETPLACE SMART CONTRACT";
 
 4- From Part5 Folder, Proceed to add the NFT and Market ABI files to the engine folder. Proceed to replace the files in your project with the ones provided in the Part5 folder. Test and practice. Time to learn more! 
 
-View Part 5 video for more info. 
+Watch Part 5 video for more info. 
 
 
