@@ -21,20 +21,28 @@ Steps:
 
 1-Create an new NextJS app:
 
+```shell
 npx create-next-app n2dmarket
+```
 
 2- Install hardhat in the n2dmarket project folder.
 
+```shell
 npm i hardhat
+```
 
 3- Create a hardhat environment (Follow Video Tutorial)
 
+```shell
 npx hardhat
+```
 
 4- Refer to the Hardhat and EthersJS knowledge base and 
 practice some info gathering using the hardhat console:
 
+```shell
 npx hardhat console
+```
 
 Hardhat Knowledge Base : https://hardhat.org/tutorial
 
