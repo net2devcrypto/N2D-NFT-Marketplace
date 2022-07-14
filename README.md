@@ -148,6 +148,7 @@ npm i --save-dev react-multi-carousel
 
 file attached in the Part-4 Folder, Replace "engine" and "public" folder with all files as well.
 
+
 4- Obtain your Resell Smart Contract Owner Wallet Private Key. (Wallet used to deploy contract)
 
 Go to /engine/configuration and update the values accordingly:
