@@ -178,7 +178,7 @@ npm run dev
 ```
 Watch part 4 vid for more details.
 
-## Part-5 Create The NFT Marketplace Contracts and App that Allows Users to upload Art and mint their own NFTs.
+## Part-5 Create The NFT Marketplace Contract and App to upload Art and mint NFTs.
 
 Click for video:
 
