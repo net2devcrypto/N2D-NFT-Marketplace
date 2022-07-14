@@ -15,9 +15,7 @@ Video tutorial playlist:
 
 https://www.youtube.com/watch?v=RnPMP813KMc&list=PLLkrq2VBYc1a2taQxryxo_sfHIOe6TeJP
 
-################################################################
-
-##💥Part-1 Hardhat and EthersJS
+## Part-1 Hardhat and EthersJS
 
 Steps:
 
