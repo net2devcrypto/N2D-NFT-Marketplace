@@ -61,10 +61,11 @@ Click for video:
 
 Add the NFT Collection Address when deploying the smart contract.
 
+## Part-3 Deploy a NextJS WebFront End
 
-#######################################################
+Click for video:
 
-<h3>💥Part-3 Deploy a NextJS WebFront End</h3>
+<a href="https://www.youtube.com/watch?v=TTSyNZCifLs&t=1837s" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="150" height="40"></a> 
 
 Steps:
 
@@ -72,6 +73,7 @@ Steps:
 
 remaining dependencies:
 
+```shell
 npm i --save-dev "@types/react"
 
 npm i axios @nextui-org/react sf-font
@@ -85,7 +87,7 @@ npm i ipfs-http-client
 npm i web3
 
 npm i --save-dev @types/canvas-confetti
-
+```
 
 2- Proceed to replace the files in your n2dmarket folder with each respective
 
@@ -95,11 +97,14 @@ file attached in the Part-3 Folder, Add the "engine" folder to the project root 
 
 and go to /engine/configuration and update the values accordingly:
 
+```shell
+
 export var hhresell = "YOUR NFT RESELL MARKET SMART CONTRACT";
 
 export var hhnftcol = "YOUR NFT COLLECTION SMART CONTRACT";
 
 var hhrpc = "YOUR MAINNET OR TESTNET RPC ADDRESS";
+```
 
 List of RPC Address to use depending on which testnet the contracts have been deployed:
 
@@ -113,7 +118,9 @@ CTRL + S to save configs
 
 Run the web server and validate:
 
+```shell
 npm run dev
+```
 
 Watch part 3 vid for more details.
 
