@@ -48,19 +48,19 @@ Hardhat Knowledge Base : https://hardhat.org/tutorial
 
 EthersJS Knowledge Base: https://docs.ethers.io/v5/
 
-#######################################################
+## Part-2 NFT Market Resell Smart Contract
 
-<h3>💥Part-2 NFT Market Resell Smart Contract</h3>
+Click for video:
 
-How to practice
+<a href="https://www.youtube.com/watch?v=60Babg2TJtU" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="150" height="40"></a> 
+
 
 1-Retrieve the NFT Collection Smart Contract Address.
 
-2- Deploy the NFT Market Resell Smart Contract located in Part2 Folder.
+2-Deploy the NFT Market Resell Smart Contract located in Part2 Folder.
 
 Add the NFT Collection Address when deploying the smart contract.
 
-Follow Part 2 Vid for explanation and procedures.
 
 #######################################################
 
