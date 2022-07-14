@@ -16,7 +16,7 @@ https://www.youtube.com/watch?v=RnPMP813KMc&list=PLLkrq2VBYc1a2taQxryxo_sfHIOe6T
 
 ################################################################
 
-Part-1 Hardhat and EthersJS
+<h3>💥Part-1 Hardhat and EthersJS</h3>
 
 Steps:
 
@@ -43,8 +43,7 @@ EthersJS Knowledge Base: https://docs.ethers.io/v5/
 
 #######################################################
 
-
-Part-2 NFT Market Resell Smart Contract
+<h3>💥Part-2 NFT Market Resell Smart Contract</h3>
 
 How to practice
 
@@ -58,7 +57,7 @@ Follow Part 2 Vid for explanation and procedures.
 
 #######################################################
 
-Part-3 Deploy a NextJS WebFront End
+<h3>💥Part-3 Deploy a NextJS WebFront End</h3>
 
 Steps:
 
@@ -113,7 +112,7 @@ Watch part 3 vid for more details.
 
 #######################################################
 
-Part-4 Relist and Buy NFTs!
+<h3>💥Part-4 Relist and Buy NFTs!</h3>
 
 Steps:
 
