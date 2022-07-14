@@ -185,9 +185,22 @@ Click for video:
 <a href="https://www.youtube.com/watch?v=60Babg2TJtU" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="150" height="40"></a> 
 
 
-1-Retrieve the NFT Collection Smart Contract Address.
+1-Deploy the Marketplace Contract to sell created NFTs located in Part5 Folder repo. Copy the contract address.
 
-2-Deploy the NFT Market Resell Smart Contract located in Part2 Folder.
+2-Deploy the NFT Smart Contract to create NFTs located in Part5 Folder, add the NFT Market smart contract to sell created NFTs when deploying and copy the contract address once deployed.
 
-Add the NFT Collection Address when deploying the smart contract.
+3- Go to /engine/configuration and add the additional contracts accordingly:
+
+```shell
+
+export var hhnft = "YOUR CREATE NFT SMART CONTRACT";
+
+export var hhmarket = "YOUR SELL CREATED NFT MARKETPLACE SMART CONTRACT";
+
+```
+
+4- From Part5 Folder, Proceed to add the NFT and Market ABI files to the engine folder. Proceed to replace the files in your project with the ones provided in the Part5 folder. Test and practice. Time to learn more! 
+
+View Part 5 video for more info. 
+
 
