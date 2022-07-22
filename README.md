@@ -207,4 +207,40 @@ export var hhmarket = "YOUR SELL CREATED NFT MARKETPLACE SMART CONTRACT";
 
 Watch Part 5 video for more info. 
 
+## Part-6 Final Video - Enable Multichain Integration!
+
+Click for video:
+
+<a href="https://www.youtube.com/watch?v=60Babg2TJtU" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="150" height="40"></a> 
+
+
+1- Stop NextJS Server and Replace all files in your project with the files attached on this repo to their respective folders.
+
+2-Deploy all required smart contracts for all networks and update the contract address in the configuration.js file located in the "engine" folder.
+
+Example for Goerli Testnet. Deploy the contracts on all required testnets. The "nftcol" is an existing nft collection smartcontract.
+
+
+Goerli Testnet
+
+```shell
+export var goeresell = "YOUR CONTRACT ADDRESS";
+contract file: https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/Part2-NFT-Market-Resell-Contract/N2D-Market-NFT-Resell-SmartContract.sol
+export var goenftcol = "YOUR CONTRACT ADDRESS";
+export var goenft = "YOUR CONTRACT ADDRESS";
+contract file: https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/Part5-Create-and-Sell-NFT-App/N2D-Market-CreateNFT-SmartContract.sol
+export var goemarket = "YOUR CONTRACT ADDRESS";
+contract file: https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/Part5-Create-and-Sell-NFT-App/N2D-Market-SellCreatedNFT-SmartContract.sol
+```
+
+Save your changes!
+
+3- Install Metamask detect provider dependency in your project folder.
+
+```shell
+npm i @metamask/detect-provider
+```
+
+4- Start NextJS server and follow the video for additional testing and practice steps.
+
 
