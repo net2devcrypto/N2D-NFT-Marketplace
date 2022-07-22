@@ -218,19 +218,21 @@ Click for video:
 
 2-Deploy all required smart contracts for all networks and update the contract address in the configuration.js file located in the "engine" folder.
 
-Example for Goerli Testnet. Deploy the contracts on all required testnets. The "nftcol" is an existing nft collection smartcontract.
+Deploy the contracts on all required testnets. The "nftcol" is an existing nft collection smartcontract.
 
+resell smartcontract : https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/Part2-NFT-Market-Resell-Contract/N2D-Market-NFT-Resell-SmartContract.sol
 
-Goerli Testnet
+nft smartcontract: https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/Part5-Create-and-Sell-NFT-App/N2D-Market-CreateNFT-SmartContract.sol
+
+market smartcontract: https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/Part5-Create-and-Sell-NFT-App/N2D-Market-SellCreatedNFT-SmartContract.sol
+
+Example for Goerli Testnet
 
 ```shell
 export var goeresell = "YOUR CONTRACT ADDRESS";
-contract file: https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/Part2-NFT-Market-Resell-Contract/N2D-Market-NFT-Resell-SmartContract.sol
 export var goenftcol = "YOUR CONTRACT ADDRESS";
 export var goenft = "YOUR CONTRACT ADDRESS";
-contract file: https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/Part5-Create-and-Sell-NFT-App/N2D-Market-CreateNFT-SmartContract.sol
 export var goemarket = "YOUR CONTRACT ADDRESS";
-contract file: https://github.com/net2devcrypto/N2D-NFT-Marketplace/blob/main/Part5-Create-and-Sell-NFT-App/N2D-Market-SellCreatedNFT-SmartContract.sol
 ```
 
 Save your changes!
