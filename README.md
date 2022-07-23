@@ -211,7 +211,7 @@ Watch Part 5 video for more info.
 
 Click for video:
 
-<a href="https://www.youtube.com/watch?v=60Babg2TJtU" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="150" height="40"></a> 
+<a href="https://www.youtube.com/watch?v=KfIaPFh_tfU" target="_blank"><img src="https://github.com/net2devcrypto/misc/blob/main/ytlogo2.png" width="150" height="40"></a> 
 
 
 1- Stop NextJS Server and Replace all files in your project with the files attached on this repo to their respective folders.
