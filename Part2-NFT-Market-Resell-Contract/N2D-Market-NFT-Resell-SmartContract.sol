@@ -15,6 +15,10 @@ Revised v2
 - Fixed ItemId to TokenId Conflict Bug 
   using tokenId as location in Memory in Struct
 
+Revised v3
+
+- Added Listing Fee Balance Withdraw Function
+
 */
 
 
@@ -24,16 +28,17 @@ pragma solidity 0.8.4;
 import "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract NFTMarketResell is IERC721Receiver, ReentrancyGuard {
+contract NFTMarketResell is IERC721Receiver, ReentrancyGuard, Ownable {
 
-  address payable owner;
+  address payable holder;
   uint256 listingFee = 0.0025 ether;
 
   struct List {
     uint256 tokenId;
     address payable seller;
-    address payable owner;
+    address payable holder;
     uint256 price;
     bool sold;
   }
@@ -43,7 +48,7 @@ contract NFTMarketResell is IERC721Receiver, ReentrancyGuard {
   event NFTListCreated (
     uint256 indexed tokenId,
     address seller,
-    address owner,
+    address holder,
     uint256 price,
     bool sold
   );
@@ -55,7 +60,7 @@ contract NFTMarketResell is IERC721Receiver, ReentrancyGuard {
   ERC721Enumerable nft;
 
    constructor(ERC721Enumerable _nft) {
-    owner = payable(msg.sender);
+    holder = payable(msg.sender);
     nft = _nft;
   }
 
@@ -94,7 +99,7 @@ contract NFTMarketResell is IERC721Receiver, ReentrancyGuard {
     uint currentIndex = 0;
     List[] memory items = new List[](nftCount);
     for (uint i = 0; i < nftCount; i++) {
-        if (vaultItems[i + 1].owner == address(this)) {
+        if (vaultItems[i + 1].holder == address(this)) {
         uint currentId = i + 1;
         List storage currentItem = vaultItems[currentId];
         items[currentIndex] = currentItem;
@@ -112,6 +117,10 @@ contract NFTMarketResell is IERC721Receiver, ReentrancyGuard {
     ) external pure override returns (bytes4) {
       require(from == address(0x0), "Cannot send nfts to Vault directly");
       return IERC721Receiver.onERC721Received.selector;
+    }
+  
+    function withdraw() public payable onlyOwner() {
+      require(payable(msg.sender).send(address(this).balance));
     }
   
 }
