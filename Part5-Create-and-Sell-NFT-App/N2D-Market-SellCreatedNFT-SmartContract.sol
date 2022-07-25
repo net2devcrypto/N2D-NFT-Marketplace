@@ -9,25 +9,31 @@ OTHER USE. THIS IS TRAINING/EDUCATIONAL
 MATERIAL. ONLY USE IT IF YOU AGREE TO THE
 TERMS SPECIFIED ABOVE.
 
+Revision v2
+
+- Added listing and minting fee balance 
+  withdraw function.
 */
+
 pragma solidity ^0.8.4;
 
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
 
-contract n2DMarket is ReentrancyGuard {
+contract n2DMarket is ReentrancyGuard, Ownable {
   using Counters for Counters.Counter;
   Counters.Counter private _itemIds;
   Counters.Counter private _itemsSold;
 
-  address payable owner;
-  uint256 listingFee = 0.025 ether;
-  uint256 mintingFee = 0.075 ether;
+  address payable holder;
+  uint256 listingFee = 0.0025 ether;
+  uint256 mintingFee = 0.0075 ether;
 
   constructor() {
-    owner = payable(msg.sender);
+    holder = payable(msg.sender);
   }
 
   struct VaultItem {
@@ -35,7 +41,7 @@ contract n2DMarket is ReentrancyGuard {
     address nftContract;
     uint256 tokenId;
     address payable seller;
-    address payable owner;
+    address payable holder;
     uint256 price;
     bool sold;
   }
@@ -47,7 +53,7 @@ contract n2DMarket is ReentrancyGuard {
     address indexed nftContract,
     uint256 indexed tokenId,
     address seller,
-    address owner,
+    address holder,
     uint256 price,
     bool sold
   );
@@ -72,10 +78,10 @@ contract n2DMarket is ReentrancyGuard {
     require(msg.value == price, "Not enough balance to complete transaction");
     idToVaultItem[itemId].seller.transfer(msg.value);
     IERC721(nftContract).transferFrom(address(this), msg.sender, tokenId);
-    idToVaultItem[itemId].owner = payable(msg.sender);
+    idToVaultItem[itemId].holder = payable(msg.sender);
     idToVaultItem[itemId].sold = true;
     _itemsSold.increment();
-    payable(owner).transfer(listingFee);
+    payable(holder).transfer(listingFee);
   }
 
   function getAvailableNft() public view returns (VaultItem[] memory) {
@@ -85,7 +91,7 @@ contract n2DMarket is ReentrancyGuard {
 
     VaultItem[] memory items = new VaultItem[](unsoldItemCount);
     for (uint i = 0; i < itemCount; i++) {
-      if (idToVaultItem[i + 1].owner == address(0)) {
+      if (idToVaultItem[i + 1].holder == address(0)) {
         uint currentId = i + 1;
         VaultItem storage currentItem = idToVaultItem[currentId];
         items[currentIndex] = currentItem;
@@ -101,14 +107,14 @@ contract n2DMarket is ReentrancyGuard {
     uint currentIndex = 0;
 
     for (uint i = 0; i < totalItemCount; i++) {
-      if (idToVaultItem[i + 1].owner == msg.sender) {
+      if (idToVaultItem[i + 1].holder == msg.sender) {
         itemCount += 1;
       }
     }
 
     VaultItem[] memory items = new VaultItem[](itemCount);
     for (uint i = 0; i < totalItemCount; i++) {
-      if (idToVaultItem[i + 1].owner == msg.sender) {
+      if (idToVaultItem[i + 1].holder == msg.sender) {
         uint currentId = i + 1;
         VaultItem storage currentItem = idToVaultItem[currentId];
         items[currentIndex] = currentItem;
@@ -140,4 +146,8 @@ contract n2DMarket is ReentrancyGuard {
     }
     return items;
   }
+
+  function withdraw() public payable onlyOwner() {
+    require(payable(msg.sender).send(address(this).balance));
+    }
 }
