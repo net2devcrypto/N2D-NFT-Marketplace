@@ -12,6 +12,7 @@ for more amazing content!!
 ██║╚████║██╔══╝░░░░░██║░░░██╔══╝░░██║░░██║██╔══╝░░░╚████╔╝░
 ██║░╚███║███████╗░░░██║░░░███████╗██████╔╝███████╗░░╚██╔╝░░
 ╚═╝░░╚══╝╚══════╝░░░╚═╝░░░╚══════╝╚═════╝░╚══════╝░░░╚═╝░░░
+
 THIS CONTRACT IS AVAILABLE FOR EDUCATIONAL 
 PURPOSES ONLY. YOU ARE SOLELY REPONSIBLE 
 FOR ITS USE. I AM NOT RESPONSIBLE FOR ANY
